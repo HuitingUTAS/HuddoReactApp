@@ -1,4 +1,3 @@
-/* BoardsFetch.css */
 
 .BoardsFetch {
   text-align: center;
@@ -8,8 +7,6 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  max-width: 600px; /* Adjust the maximum width to your preference */
-  margin: 0 auto; /* Center the table horizontally */
 }
 
 th, td {
