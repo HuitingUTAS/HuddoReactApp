@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import Axios from "axios";
+import "./BoardsFetch.css";
 
 function BoardsFetch() {
     const [boardsData, setBoardsData] = useState([]);
@@ -17,10 +18,11 @@ function BoardsFetch() {
     }, []); // Fetch services' data once when the component mounts
     return (
         <div className="BoardsFetch">
-            <h1>Huddo Services List</h1>
+            <h1>Huddo Boards Services List</h1>
             <Table>
                 <thead>
                     <tr>
+                        <th>Index</th>
                         <th>Name</th>
                         <th>Version</th>
                     </tr>
@@ -28,6 +30,9 @@ function BoardsFetch() {
                 <tbody>
                     {boardsData.map((data, index) => (
                         <tr key={index}>
+                            <td>
+                                {index + 1}
+                            </td>
                             <td>
                                 {data.name}
                             </td>
@@ -39,7 +44,7 @@ function BoardsFetch() {
 
                 </tbody>
             </Table>
-        </div>
+        </div >
     )
 }
 

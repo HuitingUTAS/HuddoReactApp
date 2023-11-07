@@ -1,0 +1,23 @@
+/* BoardsFetch.css */
+
+.BoardsFetch {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width to your preference */
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #3d3d3d;
+  text-align: center;
+}
